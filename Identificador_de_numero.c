@@ -6,11 +6,11 @@ int main() {
 	char resposta, y , Y;
 	
 	do{
-		float numero;	
-		char resposta;
+			
 		printf("Digite um numero :\n");
-	scanf("%f",&numero);
-	
+		scanf("%f",&numero);
+		fflush(stdin);
+		
 	if (numero >=0)  {
 		printf("Numero positivo\n");
 	}
@@ -21,11 +21,7 @@ int main() {
 	
 	printf("Quer continuar\n");
 	scanf("%c",&resposta);
-	}while(resposta == y);
+	fflush(stdin);
+	}while(resposta == 'y'|| resposta == 'Y');
 	
 }
-	
-	
-
-	
-
